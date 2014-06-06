@@ -13,7 +13,7 @@
     <property name="skip_pager_hint">True</property>
     <property name="decorated">False</property>
     <property name="deletable">False</property>
-    <signal name="show" handler="open_snep_server" swapped="no"/>
+    <signal name="show" handler="show_spinner" swapped="no"/>
     <child>
       <object class="GtkVBox" id="vbox1">
         <property name="visible">True</property>
@@ -60,7 +60,6 @@
                 <property name="height_request">100</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
-                <property name="active">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>

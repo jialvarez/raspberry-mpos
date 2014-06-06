@@ -2,6 +2,8 @@ import sys
 import gtk
 import myspinner
 import pluglib
+import glib
+import gobject
 
 class TestGUI:
 
@@ -54,5 +56,7 @@ class TestGUI:
 
 if __name__ == '__main__':
     v = TestGUI()
+    glib.threads_init()
     gtk.main()
+    gobject.threads_init()
     sys.exit(0)
